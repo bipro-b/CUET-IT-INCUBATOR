@@ -1,4 +1,6 @@
 const mongoose = require("mongoose")
+const {ObjectId} = mongoose.Schema.Types;
+const validator = require("validator")
 
 const companySchema = mongoose.Schema({
     name:{
@@ -32,6 +34,10 @@ const companySchema = mongoose.Schema({
         }
        
     ],
+    website:{
+        type:String,
+        validator:[validator.isUrl,"Please enter a valid url"]
+    },
     service:{
         type:  Array,
         required:[true,"Please provide services."],
@@ -43,11 +49,23 @@ const companySchema = mongoose.Schema({
             message: 'Services must be a non-empty array'
           }
     },
+    location:String,
     jobVacant:{
         type:Number,
         default:0,
         min:0
 
+    },
+    category:{
+        name:{
+            type:String,
+            required:true
+        },
+        id:{
+            type: ObjectId,
+            ref:"category",
+            required:true
+        }
     }
 
 },
