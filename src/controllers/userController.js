@@ -2,7 +2,7 @@ const { signUpService, findUserService } = require("../services/userService");
 
 exports.signUp = async (req, res, next) => {
   try {
-    const user = signUpService(req.body);
+    const user =await signUpService(req.body);
     res.status(200).json({
       status: "Success",
       message: "Successfully signed up",
