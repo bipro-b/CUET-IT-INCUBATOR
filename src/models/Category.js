@@ -1,4 +1,5 @@
 const mongoose = require("mongoose")
+const {ObjectId} = mongoose.Schema.Types;
 const validator = require("validator")
 
 const categorySchema = mongoose.Schema({
@@ -23,7 +24,13 @@ const categorySchema = mongoose.Schema({
             },
             message: 'technology must be a non-empty array'
           }
-    }
+    },
+    companies:[
+        {
+            type:ObjectId,
+            ref:"Company"
+        }
+    ]
 
 },{timestamps:true})
 

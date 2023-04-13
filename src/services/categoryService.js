@@ -6,7 +6,7 @@ exports.createCategoryService = async (data) => {
 };
 
 exports.getCategoryService = async () => {
-  const result = await Category.find({});
+  const result = await Category.find({}).populate('companies');
   return result;
 };
 
