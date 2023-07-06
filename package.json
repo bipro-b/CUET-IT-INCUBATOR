@@ -8,7 +8,7 @@
     "dev": "nodemon server"
   },
   "keywords": [],
-  "author": "",
+  "author": "Bipro Barai",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
