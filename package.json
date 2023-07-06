@@ -7,8 +7,8 @@
     "start": "node server",
     "dev": "nodemon server"
   },
-  "keywords": [],
-  "author": "Bipro Barai",
+  "keywords": ["cuet-incubator"],
+  "author": "bipro-b",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
