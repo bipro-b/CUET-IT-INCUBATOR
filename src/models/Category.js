@@ -25,12 +25,12 @@ const categorySchema = mongoose.Schema({
             message: 'technology must be a non-empty array'
           }
     },
-    companies:[
+    /*companies:[
         {
             type:ObjectId,
             ref:"Company"
         }
-    ]
+    ]*/
 
 },{timestamps:true})
 
