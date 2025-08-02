@@ -8,10 +8,10 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 
-# Copy the rest of the code
+# Copy the rest of the code, including .env
 COPY . .
 
-# Expose the app port (default is 3000; change if needed)
+# Expose the app port
 EXPOSE 3000
 
 # Start the app
