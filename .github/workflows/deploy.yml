@@ -19,9 +19,7 @@ jobs:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
-          source: |
-            .
-            .env
+          source: "."
           target: "/home/ubuntu/cuet-incubator"
 
       - name: SSH and deploy
