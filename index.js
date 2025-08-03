@@ -11,6 +11,10 @@ app.get("/",(req,res)=>{
     res.send("server is running.");
 })
 
+app.get("/api/ec2",async(req,res)=>{
+    res.send("Test ec2 after deploying");
+})
+
 const companyRoute = require("./src/routes/company");
 const categoryRoute = require("./src/routes/category")
 const userRoute = require("./src/routes/user")
