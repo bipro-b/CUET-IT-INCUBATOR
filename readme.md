@@ -1,9 +1,9 @@
-Sure! Here’s a **complete README.md** that explains from zero to final deployment, including automated Docker deployment on EC2 and accessing your app at `http://51.20.64.33:3000/api/ec2`.
+Acces at `http://51.20.64.33:3000/api/ec2`.
 
 ---
 
 ```markdown
-# CUET-Incubator Deployment Guide
+# Automatation Deployment G
 
 This guide explains how to **automate Dockerized Node.js app deployment** on an AWS EC2 instance using GitHub Actions.
 
